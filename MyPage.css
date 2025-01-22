@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(252, 208, 255);
+}
+
+main {
+    min-height: calc(100vh - 314px);
+}
+
+#main-title {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 60px;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    z-index: 10;
+}
+
+#nav-links div {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    margin: 10px;
+    border: 5px solid black;
+    width: 150px;
+    height: 80px;
+}
+
+.pressed {
+    background-color: rgb(199, 199, 199) !important;
+}
+
+#menu-button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 160px;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 20px;
+    visibility: hidden;
+}
+
+#nav-links div a,
+#nav-links div p {
+    display: inline-block;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+    font-family: monospace;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 80px;
+}
+
+#cat-pic {
+    width: 100%;
+}
+
+#omMig-pic {
+    width: 40%;
+    margin-left: 30%;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid black;
+    border-radius: 20px;
+    margin-top: 30px;
+
+}
+
+#intro-text,
+#form-text {
+    background-color: rgb(255, 255, 255);
+    border: 5px solid black;
+    border-radius: 20px;
+    text-align: justify;
+    width: 50vw;
+    margin-left: 25vw;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.article-info {
+    display: flex;
+    justify-content: center;
+    column-gap: 250px;
+    padding: 20px 0;
+    font-size: 25px;
+}
+
+.checkbox div {
+    margin: 0 10px;
+}
+
+.checkbox input {
+    margin-left: 10px;
+    transform: scale(2);
+}
+
+#list {
+    list-style-type: circle;
+}
+
+#articles {
+    display: flex;
+    width: 85vw;
+    margin-left: 7.5vw;
+    flex-wrap: wrap;
+    font-size: 20px;
+    gap: 5vw;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-family: monospace;
+}
+
+#articles article {
+    background-color: rgb(255, 255, 255);
+    border: 5px solid black;
+    border-radius: 20px;
+    width: 38vw;
+    text-align: center;
+}
+
+#articles img {
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 30px;
+    font-size: 25px;
+}
+
+input,
+textarea {
+    font-size: 20px;
+}
+
+#form-msg {
+    width: 80%;
+    height: 10em;
+}
+
+#form-name {
+    width: 80%;
+}
+
+#submit-button {
+    width: 100px;
+    height: 60px;
+    line-height: 50px;
+    font-size: 20px;
+    background-color: rgb(158, 236, 194);
+    border: 5px solid black;
+    border-radius: 20px;
+    padding-bottom: 30px;
+    font-family: monospace;
+}
+
+#form-text {
+    text-align: center;
+}
+
+#nav-links div:hover,
+#submit-button:hover {
+    font-size: smaller;
+    background-color: rgba(50, 50, 50, 0.3);
+}
+
+#submit-button:hover {
+    background-color: rgb(137, 206, 169) !important;
+}
+
+#form-text a {
+    display: inline-block;
+    font-size: 20px;
+    margin: 30px 10px;
+}
+
+#CV {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+#CV embed {
+    width: 780px;
+    height: 1000px;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    #articles article {
+        width: 80%;
+    }
+
+    #intro-text {
+
+        margin-left: 10vw;
+        width: 80vw;
+    }
+
+    #nav-links {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    #menu-button {
+        visibility: visible;
+    }
+
+    #nav-links {
+        visibility: hidden;
+        flex-direction: column;
+        position: absolute;
+        top: 230px;
+        background-color: rgb(182, 237, 255);
+        border: 5px solid black;
+        border-radius: 20px;
+    }
+
+    #nav-links div {
+        width: 100px;
+        height: 60px;
+    }
+
+    #nav-links div a,
+    #nav-links div p {
+        line-height: 60px;
+    }
+
+    #nav-links.active {
+        visibility: visible;
+    }
+
+    .article-info {
+        column-gap: 30px;
+
+    }
+
+    .checkbox input {
+        margin-left: 0px;
+    }
+}

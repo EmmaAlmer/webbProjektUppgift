@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <title>teknik sida</title>
+    <link rel="stylesheet" href="MyPage.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="main-title"> Mina tekniker </h1>
+
+        <!-- knapp för hamburgarmeny, visas bara på mobilskärmar -->
+        <img src="bilder/menuButton.png" id="menu-button" alt="hamburgarmeny">
+
+        <nav id="nav-links">
+
+            <div>
+                <a href="StartPage.html"> Start </a>
+            </div>
+            <div>
+                <a href="AboutMe.html"> Om mig </a>
+            </div>
+            <div>
+                <p class="pressed"> Teknik </p>
+            </div>
+            <div>
+                <a href="Contact.html"> Kontakt </a>
+            </div>
+            <div>
+                <a href="CV.html"> CV </a>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="article-info">
+            <section class="checkbox">
+                <div> <h4> Filtrering:</h4> <br>
+                    <label for="grafik"> Grafik </label>
+                    <input type="checkbox" id="grafik" name="grafik" value="grafik" onchange="filterHandler()">
+                </div>
+                <div>
+                    <label for="programmering"> Programmering </label>
+                    <input type="checkbox" id="programmering" name="programmering" value="programmering"
+                        onchange="filterHandler()">
+                </div>
+                <div>
+                    <label for="design"> Design </label>
+                    <input type="checkbox" id="design" name="design" value="design" onchange="filterHandler()">
+                </div>
+            </section>
+
+            <section id="list">
+                <h4> Mina artiklar: </h4>
+                <ul>
+                    <li> Java </li>
+                    <li> Databas </li>
+                    <li> Webbutveckling </li>
+                    <li> UX/UI </li>
+                    <li> JavaFX </li>
+                </ul>
+            </section>
+        </div>
+
+        <div id="articles">
+
+            <article id="java" class="filter-programmering">
+                <h2> Java </h2>
+                <p> Jag har testat mig på många olika programmeringsspråk som exempelvis python och C# men har
+                    främst fokuserat på Java och tycker det är det roligaste språket hittils (kanske för att
+                    det är det jag fokuserat på mest och förstår). Jag har gjort många olika projekt genom åren,
+                    stora som små. Jag har gjort mindre kalkylatorer och textbaserade spel och större program inom
+                    exempelvis pathfinding och hundregister.
+                </p>
+                <img id="javaPic" src="bilder/java.jpeg" alt="java ikon">
+            </article>
+
+            <article id="databas" class="filter-programmering filter-design">
+                <h2> Databas </h2>
+                <p> Databashantering är ett ämne jag tycker är lite klurigt och helt ärligt ingen favorit.
+                    Har gått samma kurs på SU och tog den igen nu på STI och har fått en betydligt djupare
+                    förståelse kring ämnet. Exempelvis hur en databas hänger ihop med utvecklarprogram samt
+                    hur man bör designa sin databas på ett effektivt sätt samt flera sql kommandon.
+                </p>
+                <img id="databasPic" src="bilder/db.jpeg" alt="bild på en databas">
+            </article>
+
+            <article id="webbutveckling" class="filter-programmering filter-grafik">
+                <h2> Webbutveckling </h2>
+                <p> Webbutveckling är ett av mina favorit ämnen inom systemutveckling. Jag har alltid
+                    haft svårt att veta vad jag vill jobba med i framtiden men webbutveckling är ett av de
+                    ämnen jag kan tänka mig att jobba med (det eller javautvecklare). Jag har inte hållit
+                    på super mycket med webb men har gjort en hel del hemsidor med css och javaScript och har
+                    bra grundliga kunskaper och tycker det är väldigt kul! Även om css kan vara lite snurrigt ibland.
+                </p>
+                <img id="webbutvecklingPic" src="bilder/html.png" alt="HTML ikon">
+            </article>
+
+            <article id="ux/ui" class="filter-design filter-grafik">
+                <h2> UX/UI </h2>
+                <p> UX och UI design är något jag jobbade mycket med på stockholms universitet när jag skapade mycket
+                    spel. Även i andra kurser var det stort fokus på användarvänlighet i alla system vi skapade.
+                    Jag tycker även detta ämne är väldigt kul då det involverar både design och programmering.
+                    Exempelvis
+                    i spelen vi skapade var det viktigt att visa spelare hur man lär sig spela spelet i början med
+                    intron
+                    och dylikt samt att alla användarmenyer har semantiska ikoner och texter.
+                </p>
+                <img id="ux/uiPic" src="bilder/ux.webp" alt="exempel på ui design">
+            </article>
+
+            <article id="javaFX" class="filter-design">
+                <h2> JavaFX </h2>
+                <p> JavaFX var en stor del under programmering 2 kursen på SU och det tyckte jag var kul för att det
+                    liknar webbdesign på ett sätt och även UX och användarvänlighet. Exempelvis gorde vi projekt där
+                    vi skulle implementera en bankautomat med rätt knappar och folders och liknande. Det är en rätt så
+                    liten del inom systemutveckling men av någon anledning tyckte jag det var så pass kul att jag tyckte
+                    det var värt att upp här!
+                </p>
+                <img id="javaFXPic" src="bilder/javafx.jpeg" alt="javafx element">
+            </article>
+
+        </div>
+
+    </main>
+
+    <footer>
+        Välkommen till min sida
+    </footer>
+
+    <script src="Functions.js"> </script>
+
+</body>
+
+</html>

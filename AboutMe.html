@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <title> om mig </title>
+    <link rel="stylesheet" href="MyPage.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="main-title"> Om mig </h1>
+
+        <!-- knapp för hamburgarmeny, visas bara på mobilskärmar -->
+        <img src="bilder/menuButton.png" id="menu-button" alt="hamburgarmeny">
+
+        <nav id="nav-links">
+
+            <div>
+                <a href="StartPage.html"> Start </a>
+            </div>
+            <div>
+                <p class="pressed"> Om mig </p>
+            </div>
+            <div>
+                <a href="Skills.html"> Teknik </a>
+            </div>
+            <div>
+                <a href="Contact.html"> Kontakt </a>
+            </div>
+            <div>
+                <a href="CV.html"> CV </a>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="intro-text">
+            <h2> Lite om mig </h2>
+            <p> hej! Jag heter Emma och är 25 år gammal. Jag bor i min underbara lägenhet i Täby.
+                Där har jag bott sen 2018 och mina föräldrar bor kvar i mitt barndomshem i Vaxholm, Rindö
+                Jag har en storasyster som heter Mathilda som jag tycker om massor. Jag har en examen inom
+                data och systemvetenskap med inriktning datorspelsutveckling från stockholms universitet.
+                Jag valde att fortsätta mina studier inom området för att få mer kött på benen innan arbetslivet
+                och studerar till java utvecklare på stockholms tekniska institut.
+            </p>
+        </section>
+
+        <picture>
+            <source srcset="bilder/omMig.jpeg" media="(min-width:1000px)">
+            <img id="omMig-pic" src="bilder/omMigResized.jpg" alt="mina föräldrar på vandring">
+        </picture>
+
+    </main>
+
+    <footer>
+        Välkommen till min sida
+    </footer>
+
+    <script src="Functions.js"> </script>
+
+</body>
+
+</html>
