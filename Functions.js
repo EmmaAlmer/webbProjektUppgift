@@ -15,13 +15,12 @@ function submitFunction() {
     else {
         alert("Du måste fylla i med text");
     }
-
 }
+
 //sätter igång hamburgarmeny knappen för mobiler
 function menuHandler() {
 
     document.getElementById("nav-links").classList.toggle('active');
-
 }
 menuButton.addEventListener('click', menuHandler)
 
@@ -47,7 +46,6 @@ function filterHandler() {
                 child.style.visibility = "visible";
                 child.style.position = "relative";
             }
-
         }
     }
 
@@ -58,7 +56,6 @@ function filterHandler() {
                 child.style.visibility = "visible";
                 child.style.position = "relative";
             }
-
         }
     }
 
@@ -69,8 +66,6 @@ function filterHandler() {
                 child.style.visibility = "visible";
                 child.style.position = "relative";
             }
-
         }
     }
-
 }
